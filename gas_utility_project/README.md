@@ -1,5 +1,5 @@
 Here’s a detailed `README.md` for your Django-based gas utility project:
-
+![developer](https://img.shields.io/badge/Developed%20By%20%3A-Abhishek%20Verma-red)
 ---
 
 # Gas Utility Service - Backend Application
@@ -170,73 +170,3 @@ We welcome contributions to improve the project. To contribute, follow these ste
 3. Make your changes and commit them.
 4. Push your changes to your fork.
 5. Open a pull request with a description of your changes.
-
-### License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-This `README.md` should help you set up, run, and understand your Django project. You can modify it based on your project’s specific details if needed. Let me know if you need any further adjustments!al environment name, like (venv).
-
-Install Dependencies
-
-After activating the virtual environment, install the required dependencies by running:
-pip install -r requirements.txt
-
-This will install Django and any other necessary Python packages.
-
-Apply Migrations
-Django uses migrations to handle changes to the database schema. To apply the migrations,
-run:
-python manage.py migrate
-This command will set up the database and apply any pending migrations.
-
-Run the Development Server
-To start the development server, run the following command:
-
-
-python manage.py runserver
-By default, the server will run at http://127.0.0.1:8000/.
-
-You should see a message similar to the following:
-Django version 4.x.x, using settings 'gas_utility_service.settings'
-Starting development server at http://127.0.0.1:8000/
-Quit the server with CTRL-BREAK.
-
-Usage
-API Endpoints:
-/api/requests/: To submit, track, and view customer service requests.
-/admin/: Admin dashboard for managing customer service requests (requires admin login).
-Admin Panel: After creating a superuser, you can access the Django Admin panel at http://127.0.0.1:8000/admin/. You can manage users, view requests, and perform other administrative tasks.
-
-To create a superuser for the Django admin, run:
-python manage.py createsuperuser
-
-Follow the prompts to set up the admin credentials.
-
-Testing
-To run tests for the project, use the following command:
-python manage.py test
-
-This will discover and run all test cases in the tests.py file of each app.
-
-Deployment
-To deploy this project to a production server, you can use WSGI servers like Gunicorn or Waitress. Here's how you can deploy using Waitress:
-
-Install Waitress if you haven’t already:
-pip install waitress
-
-Run the application with Waitress:
-waitress-serve --port=8000 gas_utility_service.wsgi:application
-
-Make sure to configure the production database and settings as necessary for deployment.
-
-Contributing
-We welcome contributions to improve the project. To contribute, follow these steps:
-
-Fork the repository.
-Create a new branch.
-Make your changes and commit them.
-Push your changes to your fork.
-Open a pull request with a description of your changes.
