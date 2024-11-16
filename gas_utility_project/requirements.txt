@@ -1,0 +1,13 @@
+Here’s a requirements for Django project:
+
+```
+Django>=4.0,<5.0
+djangorestframework>=3.14,<4.0
+psycopg2-binary>=2.9,<3.0  # For PostgreSQL, or use sqlite3 for SQLite
+gunicorn>=20.1,<21.0
+django-cors-headers>=3.7,<4.0
+```
+
+This includes core dependencies for Django, Django Rest Framework, 
+a PostgreSQL database adapter, and a production server (Gunicorn). 
+If you're using SQLite, you can skip `psycopg2-binary`.
