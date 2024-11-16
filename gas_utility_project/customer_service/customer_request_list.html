@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Customer Service Requests</title>
+</head>
+<body>
+    <h1>Customer Service Requests</h1>
+    <ul>
+        {% for request in service_requests %}
+            <li>{{ request }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
