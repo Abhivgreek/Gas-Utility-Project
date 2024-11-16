@@ -1,4 +1,3 @@
-Here’s a detailed `README.md` for your Django-based gas utility project:
 ![developer](https://img.shields.io/badge/Developed%20By%20%3A-Abhishek%20Verma-red)
 ---
 
